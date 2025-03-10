@@ -4,25 +4,47 @@
 <style>
     body{
         background-image: linear-gradient(100deg, red, blue);
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Full viewport height */
         display: flex;
-        justify-content:center;
-        align-items:center;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        
 
     }
     .parent{
-        height: 50%;
+        height: 75vh;
         width: 50%;
         background-color: whitesmoke;
-        border: 2px, solid, black;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
 
+    }
+    .mtitle{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .one{
+        border: 1.5px solid black;
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        background-image: linear-gradient(20deg, red, blue);
+        
+    }
+    .para{
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif ;
     }
 </style>
 </head>
 <body>
-<h1>Welcome</h1>
+
 <div class="parent">
-<div></div>
-<div></div>
+    <h1 class="mtitle">Welcome</h1>
+    <p class="para"> The website is under construction. It will not take long!</p>
 </div>
 </body>
 </html>
