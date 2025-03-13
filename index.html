@@ -2,11 +2,24 @@
 <head>
 <title>IACT, Rourkela</title>
 <style>
+    body{
+        
+    }
     
     .parent{
-        height: 75vh;
-        width: 50%;
-        background-color: whitesmoke;
+        height: 50vh;
+        width: 100%;
+        background-color: navy;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        overflow: hidden;
+        
+
+    }
+    .child{
+        height: 50vh;
+        width: 100%;
+        background-color: pink;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         
@@ -43,49 +56,95 @@
     ul{
         background-color: navy;
         list-style-type: none;
-        margin: 0;
+        margin-bottom: 0.7%;
         padding: 20px;
         overflow: hidden;
+        background-image: url("images\test_1.png");
+        
         
     }
     .header{
-        text-align: center;
+        
         font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-image: url("images\test_1.png");
+        background-color: navy;
+        padding: 2%;
+        margin-bottom: 5%;
+        border-radius: 20px;
+        
+        
     }
     .head{
-        display: inline;
+        
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     span{
         margin:0 auto;
     }
     .gparent{
-        display: flex;
+        display: grid;
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        row-gap: 0.6%;
+        column-gap: 0.4%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 100vh;
         
        
     }
+    .topnav{
+        width: 100%;
+        position:sticky;
+        overflow: hidden;
+        
+       
+    }
+    img{
+        height: 100%;
+        width: 100%;
 
+    }
+ 
 </style>
 </head>
 <body>
     <div id="header" class="head">
     <h1 class="header">IACT, Rourkela</h1>
     </div>
+    <div class="topnav">
+        
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="index.html">Contact Us</a></li>
         <li><a href="index.html">About Us</a></li>
-        <li style="padding-left: 34%;"><a href="index.html">Book a Demo</a></li>
+        <li style="padding-left: 34%;"><a href="index.html">Book a Demo Class</a></li>
         
     </ul>
+    </div>
     <div class="gparent">     
     <div class="parent">
-        <span><h1 class="mtitle">Welcome</h1></span>
-        <span><p class="para"> The website is under construction. It will not take long! </p></span>
-
+        <img src="images\test_1.png" alt="testimg">
+    </div>
+    <div class="child">
+    </div>
+    <div class="parent">
+        <img src="images\test_1.png" alt="testimg">
+    </div>
+    <div class="child">
+    </div>
+    <div class="parent">
+        <img src="images\test_1.png" alt="testimg">
+    </div>
+    <div class="child">
+    </div>
+    <div class="parent">
+        <img src="images\test_1.png" alt="testimg">
+    </div>
+    <div class="child">
     </div>
     </div>
 </body>
